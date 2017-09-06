@@ -8,3 +8,5 @@ function flip(array) {
   }
   return newArray
 }
+
+document.write('<h1>'+ flip(randomArray) + '</h1>')
