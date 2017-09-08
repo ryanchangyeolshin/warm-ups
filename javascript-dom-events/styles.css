@@ -37,6 +37,7 @@ body {
 
   /* Box Model */
   border: 1px solid black;
+  border-radius: 10px;
   margin: 20px 100px;
   padding: 50px;
 
@@ -65,12 +66,14 @@ body {
 #list-items {
   /* Border */
   border: 3px solid black;
+  border-radius: 10px;
   margin-bottom: 10px;
   padding: 20px;
 
   /* Typography */
   list-style: none;
   font-size: 30px;
+  font-weight: 300;
 
   /* Visuals */
   background-color: #f16b00;
