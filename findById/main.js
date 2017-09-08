@@ -17,14 +17,20 @@ var parts = [
 ]
 
 function findById(id, collection) {
-  if (id > collection.length) {
-    throw new Error ('Cannot find by ID!')
+  var result = null
+  for (var i = 0; i < collection.length; i++) {
+    if(collection[i].id  === id) {
+      result = collection[i]
+      break
+    }
+    else {
+      result = null
+    }
+  }
+  if (result !== null) {
+    return result
   }
   else {
-    for (var i = 0; i < collection.length; i++) {
-      if(collection[i].id  === id) {
-        return collection[i]
-      }
-    }
+    throw new Error('Cannot find by ID')
   }
 }
