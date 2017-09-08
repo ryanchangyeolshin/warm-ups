@@ -13,11 +13,18 @@ function renderListItems() {
   // Give the created list element a class attribute
   $listItem.setAttribute('id', 'list-items')
 
-  // Make the text content equal to the user input
+  // Give the delete button an id attribute
+  $deleteButton.setAttribute('id', 'delete-button')
+
+  // Make the text content
   $listItem.textContent = $text.value
+  $deleteButton.textContent = 'X'
 
   // Append it as the child of the <ul class="list"> tag
   $list.appendChild($listItem)
+
+  // Append the delete button to the <li> tag
+  $listItem.appendChild($deleteButton)
 
   // Provide a setTimeout alert
   setTimeout(function() {
@@ -27,7 +34,8 @@ function renderListItems() {
 
 function deleteList(e) {
   var $listItem = e.target;
-  console.log($listItem)
+  console.log(e.target)
 }
 
 $button.addEventListener('click', renderListItems)
+$deleteButton.addEventListener('click', deleteList)

@@ -97,12 +97,12 @@ body {
   /* Positioning */
   position: absolute;
   right: 30px;
-  top: 0;
+  top: -20px;
 
   /* Box Model */
   border-radius: 50px;
   margin-top: 30px;
-  padding: 30px;
+  padding: 20px;
 
   /* Visuals */
   background-color: black;
