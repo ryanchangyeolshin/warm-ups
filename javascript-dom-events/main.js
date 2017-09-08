@@ -7,6 +7,9 @@ function renderListItems() {
   // Create the list element
   var $listItem = document.createElement('li')
 
+  // Create the delete button element
+  var $deleteButton = document.createElement('button')
+
   // Give the created list element a class attribute
   $listItem.setAttribute('id', 'list-items')
 
@@ -20,6 +23,11 @@ function renderListItems() {
   setTimeout(function() {
     alert('You typed in a list!')
   }, 1000)
+}
+
+function deleteList(e) {
+  var $listItem = e.target;
+  console.log($listItem)
 }
 
 $button.addEventListener('click', renderListItems)

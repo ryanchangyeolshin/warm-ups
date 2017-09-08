@@ -64,6 +64,9 @@ body {
 }
 
 #list-items {
+  /* Positioning */
+  position: relative;
+
   /* Border */
   border: 3px solid black;
   border-radius: 10px;
@@ -87,5 +90,21 @@ body {
 
   /* Visuals */
   background-color: #2ca94e;
+  color: white;
+}
+
+#delete-button {
+  /* Positioning */
+  position: absolute;
+  right: 30px;
+  top: 0;
+
+  /* Box Model */
+  border-radius: 50px;
+  margin-top: 30px;
+  padding: 30px;
+
+  /* Visuals */
+  background-color: black;
   color: white;
 }
