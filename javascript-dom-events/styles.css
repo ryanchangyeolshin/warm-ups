@@ -63,7 +63,7 @@ body {
   font-weight: 300;
 }
 
-#list-items {
+.list-items {
   /* Positioning */
   position: relative;
 
@@ -93,7 +93,7 @@ body {
   color: white;
 }
 
-#delete-button {
+.delete-button {
   /* Positioning */
   position: absolute;
   right: 30px;
@@ -103,6 +103,9 @@ body {
   border-radius: 50px;
   margin-top: 30px;
   padding: 20px;
+
+  /* Typography */
+  font-weight: 700;
 
   /* Visuals */
   background-color: black;
