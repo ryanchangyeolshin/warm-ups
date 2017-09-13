@@ -6,7 +6,7 @@ function print(value) {
 
 function forEach(array, printFunction) {
   for (var i = 0; i < array.length; i++) {
-    print(array[i])
+    printFunction(array[i])
   }
 }
 
