@@ -1,9 +1,9 @@
 function createElement(tagName, attributes, children) {
   const $HTMLElement = document.createElement(tagName)
-  for (var attribute in attributes) {
+  for (let attribute in attributes) {
     $HTMLElement.setAttribute(attribute, attributes[attribute])
   }
-  for (var i = 0; i < children.length; i++) {
+  for (let i = 0; i < children.length; i++) {
     $HTMLElement.appendChild(children[i])
   }
   return $HTMLElement
