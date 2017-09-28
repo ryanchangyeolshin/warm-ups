@@ -11,6 +11,37 @@ const queryString = {
   }
 }
 
+const queryStringTwo = {
+  stringify(object) {
+    return Object
+      .keys(object)
+      .map((key, index) => `${!index?'?':'&'}${key}=${object[key]}`)
+      .join('')
+  }
+}
+
+const queryStringThree = {
+  stringify: function(object) {
+    var keys = Object.keys(object)
+
+    if (keys.length < 1) {
+      return ''
+    }
+
+    var result = []
+
+    for (var i = 0; i < keys.length; i++) {
+      if (i === 0) {
+        result.push('?' + keys[i] + '=' + object[keys[i]])
+      } else {
+        result.push('&' + keys[i] + '=' + object[keys[i]])
+      }
+    }
+
+    var result.join('')
+  }
+}
+
 console.log(queryString.stringify({ id: 1 }))
 // -> "?id=1"
 
