@@ -7,7 +7,6 @@ const queryString = {
     for (let param in params) {
       url += `${param}=${params[param]}&`
     }
-
     return url.slice(0, url.length - 1)
   }
 }
