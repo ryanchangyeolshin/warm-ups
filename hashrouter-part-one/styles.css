@@ -1,0 +1,31 @@
+nav li {
+  display: inline-block;
+  font-size: 4rem;
+}
+
+nav a {
+  color: dimgrey;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+.view {
+  border: 1px solid;
+  border-radius: 6px;
+}
+
+.hidden {
+  display: none;
+}
+
+#fire {
+  border-color: red;
+}
+
+#water {
+  border-color: blue;
+}
+
+#grass {
+  border-color: green;
+}
