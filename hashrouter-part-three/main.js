@@ -50,13 +50,9 @@ class HashRouter {
   match(hash) {
     const handler = this.handlers[hash]
     this.$views.forEach($view => {
-      if ($view.getAttribute('id') === hash) {
-        $view.classList.remove('hidden')
-        handler($view)
-      }
-      else {
-        $view.classList.add('hidden')
-      }
+      $view.getAttribute('id') === hash
+        ? ($view.classList.remove('hidden'), handler($view))
+        : $view.classList.add('hidden')
     })
   }
   listen() {
