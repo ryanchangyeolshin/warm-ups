@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+          crossorigin="anonymous"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Hash Router Part 5</title>
+  </head>
+  <body>
+    <div class="container">
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#list">All</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#list?type=fire">Fire</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#list?type=water">Water</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#list?type=grass">Grass</a>
+        </li>
+      </ul>
+    </div>
+    <div class="container">
+      <div class="view hidden" id="list">
+      </div>
+      <div class="view hidden" id="details">
+      </div>
+    </div>
+    <script src="query-string.js"></script>
+    <script src="hash-router.js"></script>
+    <script src="create-element.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
