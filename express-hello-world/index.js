@@ -10,6 +10,6 @@ app.listen(3000, err => {
     console.error(err)
   }
   else {
-    console.log("Listening on PORT 3000")
+    console.log("Listening to PORT 3000")
   }
 })
