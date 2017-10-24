@@ -9,7 +9,8 @@
                            When calling a method from a library, you are in control. But with a framework,
                            the control is inverted. The framework calls your code.
 
-5. Deep vs. Shallow Equality = Deep equality
+5. Deep vs. Shallow Equality = Deep equality is the equality of values, or 2 references that point to objects that have the same value.
+                               Shallow equality is the equality of references, or two references that point to the same object.
 
 6. Unit Testing = Testing that runs code over a segment of your program checking the input and output.
                   This ensures that individual components of the app work as expected.
