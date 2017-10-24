@@ -1,0 +1,22 @@
+1. Assertion Library (chai) = tools that we use to verify that our code is running properly.
+
+2. Test Framework (mocha) = tool that provides the basis of test automation and simplifies the automation effort. In contrast to a library,
+                            test framework takes your code and provides the testing result.
+
+3. Test Runner = scripts that we provide to run our test suites.
+
+4. Library vs. Framework = The key difference between a library and a framework is "Inversion of Control".
+                           When calling a method from a library, you are in control. But with a framework,
+                           the control is inverted. The framework calls your code.
+
+5. Deep vs. Shallow Equality = Deep equality
+
+6. Unit Testing = Testing that runs code over a segment of your program checking the input and output.
+                  This ensures that individual components of the app work as expected.
+
+7. Integration Testing = Testing that ensures that component collaborations work as expected. They test
+                         component API, UI, or side-effects (such as database I/O, logging, etc).
+
+8. TDD (Test-Driven Development) = software development process  where you write tests before you write application code.
+
+9. Late Binding = computer programming mechanism in which the method being called upon an object is looked up by name at runtime.
