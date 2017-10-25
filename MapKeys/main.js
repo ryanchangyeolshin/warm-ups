@@ -1,6 +1,6 @@
 function mapKeys(target, transform) {
   const newTarget = {}
-  const keys = Object.keys(target)
+  Object.keys(target)
     .map(key => transform(key))
     .forEach(key => {
       newTarget[key] = target[key.toLowerCase()]
