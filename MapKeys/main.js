@@ -1,11 +1,11 @@
 function mapKeys(target, transform) {
+  const newTarget = {}
   const keys = Object.keys(target)
   const newKeys = keys
     .map(key => transform(key))
-  const newTarget = {}
-  for (var i = 0; i < newKeys.length; i++) {
-    newTarget[newKeys[i]] = target[newKeys[i].toLowerCase()]
-  }
+    .forEach(key => {
+      newTarget[key] = target[key.toLowerCase()]
+    })
   return newTarget
 }
 
