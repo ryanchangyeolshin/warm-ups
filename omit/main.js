@@ -2,7 +2,7 @@ const omit = (target, keys) => {
   const newTarget = {}
   Object.keys(target)
     .filter(key => !keys.includes(key))
-    .forEach(key => newTarget[key] = teacher[key])
+    .forEach(key => newTarget[key] = target[key])
   return newTarget
 }
 
