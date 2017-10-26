@@ -39,7 +39,7 @@
 
 16. Lazy Initialization = The tactic of delaying the creation of an object, the calculation of a value, or some other expensive process unit the first it is needed.
 
-17. Dependency Injection = Technique whereby one object supplies the dependencies of another object.
+17. Dependency Injection = Technique whereby one object supplies the dependencies of another object (modules in Node.js). Makes it easier for unit testing and maintaining code.
 
 18. Loose Coupling = An approach to interconnecting the components in a system or network so that those components, also called elements, depend on each other to the least extent practicable.
                      It also means reducing dependencies of a class that use a different class directly, promoting greater reusability and easier maintainability.
