@@ -22,15 +22,15 @@
 
 9. Late Binding = computer programming mechanism in which the method being called upon an object is looked up by name at runtime.
 
-10. Encryption = the process of converting information like passwords or other classified information into code to prevent unauthorized access.
+10. Encryption = the process of converting information like passwords or other classified information into algorithmic code to prevent unauthorized access.
 
 11. Brute Force Attack = trial-and-error method used to obtain information such as a user password or personal identification number (PIN).
                         In brute force attack, automated software is used to generate a large number of consecutive guesses as to the value of the desired data.
 
 12. Transport Layer Security (TLS) = Cryptographic protocols that provide communications security over a computer network in a way designed to prevent eavesdropping and tampering.
-                                     Also provides privacy and data integrity between 2 communicating applications.
+                                     Also provides privacy and data integrity between 2 communicating applications. It is the successor of SSL. If you go into a website that says "https", then it means that there's end-to-end security between the user agent and the web server.
 
-13. Man-in-the-middle Attack = An attack where the attacker secretly relays and possible alters the communication between 2 parties who believe they are directly communicating with each other.
+13. Man-in-the-middle Attack = An attack where the attacker secretly relays and possible alters the communication between 2 parties who believe they are directly communicating with each other. A man acts as a middle man who communicates with both parties while both parties are not talking directly to each other.
 
 14. Authentication vs. Authorization = Authentication is the process of verifying who you are. Authorization is the process of verifying that you have access to certain features or information.
 
@@ -39,7 +39,8 @@
 
 16. Lazy Initialization = The tactic of delaying the creation of an object, the calculation of a value, or some other expensive process unit the first it is needed.
 
-17. Dependency Injection = Technique whereby one object supplies the dependencies of another object (modules in Node.js). Makes it easier for unit testing and maintaining code.
+17. Dependency Injection = Technique whereby one object supplies the dependencies of another object (modules in Node.js). Makes it easier for unit testing and maintaining code. I'm writing some code that need some parameters, but I don't know where these parameters are coming from but I'm writing it anyway.
 
 18. Loose Coupling = An approach to interconnecting the components in a system or network so that those components, also called elements, depend on each other to the least extent practicable.
                      It also means reducing dependencies of a class that use a different class directly, promoting greater reusability and easier maintainability.
+                     Loose coupling in programming is a design goal that seeks to reduce the inter-dependencies between components of a system with the goal of reducing the risk that changes in one component will require changes in other component.
