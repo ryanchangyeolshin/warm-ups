@@ -21,3 +21,25 @@
 8. TDD (Test-Driven Development) = software development process  where you write tests before you write application code.
 
 9. Late Binding = computer programming mechanism in which the method being called upon an object is looked up by name at runtime.
+
+10. Encryption = the process of converting information like passwords or other classified information into code to prevent unauthorized access.
+
+11. Brute Force Attack = trial-and-error method used to obtain information such as a user password or personal identification number (PIN).
+                        In brute force attack, automated software is used to generate a large number of consecutive guesses as to the value of the desired data.
+
+12. Transport Layer Security (TLS) = Cryptographic protocols that provide communications security over a computer network in a way designed to prevent eavesdropping and tampering.
+                                     Also provides privacy and data integrity between 2 communicating applications.
+
+13. Man-in-the-middle Attack = An attack where the attacker secretly relays and possible alters the communication between 2 parties who believe they are directly communicating with each other.
+
+14. Authentication vs. Authorization = Authentication is the process of verifying who you are. Authorization is the process of verifying that you have access to certain features or information.
+
+15. Partial Application = The process of fixing a number of arguments to a function, producing another function of smaller arity. Arity refers to the number of arguments a function can accept.
+                          Partial application also means taking a function and partially applying it to one or more arguments, but not all, creating a new function in the process.
+
+16. Lazy Initialization = The tactic of delaying the creation of an object, the calculation of a value, or some other expensive process unit the first it is needed.
+
+17. Dependency Injection = Technique whereby one object supplies the dependencies of another object.
+
+18. Loose Coupling = An approach to interconnecting the components in a system or network so that those components, also called elements, depend on each other to the least extent practicable.
+                     It also means reducing dependencies of a class that use a different class directly, promoting greater reusability and easier maintainability.
