@@ -1,15 +1,14 @@
-const memoize = fn => {
-  let lastArg
-  let lastValue
-  return arg => {
-    if (lastArg !== arg) {
-      lastArg = arg
-      lastValue = fn(arg)
-      return lastValue
+const memoize = (fn) => {
+  let lastArgs = []
+  let lastResult
+  return (...args) => {
+    if (args.length === lastArgs.length
+        args.every((_, i) => args[i] === lastArgs[i])) {
+      return lastResult
     }
-    else {
-      return lastValue
-    }
+    lastArgs = args
+    lastResult = fn(...args)
+    return lastResult
   }
 }
 
