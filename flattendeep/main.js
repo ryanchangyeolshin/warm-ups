@@ -10,3 +10,5 @@ const flattenDeep = list => {
 
 console.log(flattenDeep([1, [2, [3, [4]], 5]]))
 // [1, 2, 3, 4, 5]
+
+console.log(flattenDeep2([1, [2, [3, [4]], 5]]))
