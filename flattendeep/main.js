@@ -8,6 +8,14 @@ const flattenDeep = list => {
   return newList
 }
 
+const flattenDeep2 = list => {
+  return array.reduce((flattened, value) =>
+    Array.isArray(value)
+      ? flattened.concat(...flattenedDeep(value))
+      : flattened.concat(value)
+  )
+}
+
 console.log(flattenDeep([1, [2, [3, [4]], 5]]))
 // [1, 2, 3, 4, 5]
 
